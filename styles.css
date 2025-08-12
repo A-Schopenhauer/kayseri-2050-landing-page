@@ -1,0 +1,1719 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Gezinme Çubuğu (Navigation Bar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Ana Görsel Başlık Bölümü (Hero Section) */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #e9ecef;
+    min-height: 70vh;
+    gap: 2rem;
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    max-width: 50%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- */
+
+/* Hakkımızda Bölümü (About Us Section) */
+.about-us {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.circular-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-us-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-us-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-us-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* --- */
+
+/* Responsive Tasarım İçin Küçük Ekran Ayarları */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 80%;
+    }
+
+    .about-us-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .circular-image {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-us-text {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+/* Temel Sıfırlama ve Font Ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Gezinme Çubuğu (Navigation Bar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Ana Görsel Başlık Bölümü (Hero Section) */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #e9ecef;
+    min-height: 70vh; /* Sayfanın en az %70'ini kaplaması için */
+    gap: 2rem;
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    max-width: 50%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hakkımızda Bölümü (About Us Section) */
+.about-us {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* Görsel ve metin arasında boşluk */
+    max-width: 1200px;
+    margin: 0 auto; /* Ortalamak için */
+}
+
+.circular-image {
+    width: 300px; /* Sabit genişlik ve yükseklik */
+    height: 300px;
+    border-radius: 50%; /* Dairesel yapmak için */
+    overflow: hidden; /* Taşmayı engellemek için */
+    flex-shrink: 0; /* Küçülmesini engellemek için */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Görselin dairesel alana sığmasını sağlar */
+}
+
+.about-us-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-us-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-us-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Problem / Features Section */
+.features {
+    padding: 4rem 2rem;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.features p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 3rem auto; /* Ortalamak ve alt boşluk eklemek için */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive üç sütun */
+    gap: 2rem; /* Sütunlar arası boşluk */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-item img {
+    /* Görsel boyutunu küçültmek için yapılan değişiklikler */
+    width: 150px; /* Sabit genişlik */
+    height: 100px; /* Sabit yükseklik */
+    object-fit: cover; /* Resmin boyutlara sığmasını sağlar */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-left: auto; /* Görseli yatayda ortalar */
+    margin-right: auto; /* Görseli yatayda ortalar */
+    display: block; /* margin: auto'nun çalışması için blok eleman yapar */
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #777;
+    margin: 0; /* Üstteki p stilini sıfırlamak için */
+}
+
+/* Responsive Tasarım İçin Küçük Ekran Ayarları */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 80%;
+    }
+
+    .about-us-container {
+        flex-direction: column; /* Küçük ekranlarda dikey hizalama */
+        gap: 2rem;
+    }
+
+    .circular-image {
+        width: 200px; /* Küçük ekranlarda daha küçük görsel */
+        height: 200px;
+    }
+
+    .about-us-text {
+        text-align: center; /* Metni ortaya hizala */
+        max-width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Küçük ekranlarda tek sütun */
+    }
+}
+/* Temel Sıfırlama ve Font Ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Gezinme Çubuğu (Navigation Bar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Ana Görsel Başlık Bölümü (Hero Section) */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #e9ecef;
+    min-height: 70vh; /* Sayfanın en az %70'ini kaplaması için */
+    gap: 2rem;
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    max-width: 50%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hakkımızda Bölümü (About Us Section) */
+.about-us {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* Görsel ve metin arasında boşluk */
+    max-width: 1200px;
+    margin: 0 auto; /* Ortalamak için */
+}
+
+.circular-image {
+    width: 300px; /* Sabit genişlik ve yükseklik */
+    height: 300px;
+    border-radius: 50%; /* Dairesel yapmak için */
+    overflow: hidden; /* Taşmayı engellemek için */
+    flex-shrink: 0; /* Küçülmesini engellemek için */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Görselin dairesel alana sığmasını sağlar */
+}
+
+.about-us-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-us-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-us-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Problem / Features Section */
+.features {
+    padding: 4rem 2rem;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.features p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 3rem auto; /* Ortalamak ve alt boşluk eklemek için */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive üç sütun */
+    gap: 2rem; /* Sütunlar arası boşluk */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-item img {
+    /* Görsel boyutunu küçültmek için yapılan değişiklikler */
+    width: 150px; /* Sabit genişlik */
+    height: 100px; /* Sabit yükseklik */
+    object-fit: cover; /* Resmin boyutlara sığmasını sağlar */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-left: auto; /* Görseli yatayda ortalar */
+    margin-right: auto; /* Görseli yatayda ortalar */
+    display: block; /* margin: auto'nun çalışması için blok eleman yapar */
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #777;
+    margin: 0; /* Üstteki p stilini sıfırlamak için */
+}
+
+/* Çözümler Bölümü (Solutions Section) */
+.solution-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 3rem; /* Görsel ve metin arasında boşluk */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.solution-block:nth-of-type(odd) { /* Tek sıradaki bloklar için arkaplan rengi */
+    background-color: #fff;
+}
+
+.solution-block:nth-of-type(even) { /* Çift sıradaki bloklar için arkaplan rengi */
+    background-color: #e9ecef;
+}
+
+.solution-block.reverse {
+    flex-direction: row-reverse; /* Görsel ve metin sırasını tersine çevir */
+}
+
+.solution-image {
+    flex: 1; /* Esnek boyutlandırma */
+    max-width: 40%; /* Maksimum genişlik biraz küçültüldü */
+    display: flex; /* İçindeki görseli ortalamak için */
+    justify-content: center;
+    align-items: center;
+}
+
+.solution-image img {
+    /* Çözüm görsellerinin boyutunu küçültmek için yapılan değişiklikler */
+    width: 400px; /* Yeni sabit genişlik */
+    height: 250px; /* Yeni sabit yükseklik */
+    object-fit: cover; /* Görselin boyutlara sığmasını sağlar */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.solution-content {
+    flex: 1; /* Esnek boyutlandırma */
+    max-width: 60%; /* Metin içeriğine biraz daha genişlik verildi */
+    text-align: left;
+}
+
+.solution-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.solution-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Tasarım İçin Küçük Ekran Ayarları */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 80%;
+    }
+
+    .about-us-container {
+        flex-direction: column; /* Küçük ekranlarda dikey hizalama */
+        gap: 2rem;
+    }
+
+    .circular-image {
+        width: 200px; /* Küçük ekranlarda daha küçük görsel */
+        height: 200px;
+    }
+
+    .about-us-text {
+        text-align: center; /* Metni ortaya hizala */
+        max-width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Küçük ekranlarda tek sütun */
+    }
+
+    .solution-block {
+        flex-direction: column; /* Küçük ekranlarda dikey hizalama */
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .solution-block.reverse {
+        flex-direction: column; /* Küçük ekranlarda dikey hizalama (ters çevirme kalkar) */
+    }
+
+    .solution-image,
+    .solution-content {
+        max-width: 100%; /* Küçük ekranlarda tam genişlik */
+    }
+
+    .solution-image img {
+        width: 280px; /* Mobil görünümde çözüm görselleri için daha da küçük genişlik */
+        height: 180px; /* Mobil görünümde çözüm görselleri için daha da küçük yükseklik */
+    }
+}
+/* Temel Sıfırlama ve Font Ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Temel Sıfırlama ve Font Ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Gezinme Çubuğu (Navigation Bar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Ana Görsel Başlık Bölümü (Hero Section) */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #e9ecef;
+    min-height: 70vh; /* Sayfanın en az %70'ini kaplaması için */
+    gap: 2rem;
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    max-width: 50%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hakkımızda Bölümü (About Us Section) */
+.about-us {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* Görsel ve metin arasında boşluk */
+    max-width: 1200px;
+    margin: 0 auto; /* Ortalamak için */
+}
+
+.circular-image {
+    width: 300px; /* Sabit genişlik ve yükseklik */
+    height: 300px;
+    border-radius: 50%; /* Dairesel yapmak için */
+    overflow: hidden; /* Taşmayı engellemek için */
+    flex-shrink: 0; /* Küçülmesini engellemek için */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Görselin dairesel alana sığmasını sağlar */
+}
+
+.about-us-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-us-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-us-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Problem / Features Section */
+.features {
+    padding: 4rem 2rem;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.features p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 3rem auto; /* Ortalamak ve alt boşluk eklemek için */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive üç sütun */
+    gap: 2rem; /* Sütunlar arası boşluk */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-item img {
+    /* Görsel boyutunu küçültmek için yapılan değişiklikler */
+    width: 150px; /* Sabit genişlik */
+    height: 100px; /* Sabit yükseklik */
+    object-fit: cover; /* Resmin boyutlara sığmasını sağlar */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-left: auto; /* Görseli yatayda ortalar */
+    margin-right: auto; /* Görseli yatayda ortalar */
+    display: block; /* margin: auto'nun çalışması için blok eleman yapar */
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #777;
+    margin: 0; /* Üstteki p stilini sıfırlamak için */
+}
+
+/* Çözümler Bölümü (Solutions Section) */
+.solution-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 3rem; /* Görsel ve metin arasında boşluk */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.solution-block:nth-of-type(odd) { /* Tek sıradaki bloklar için arkaplan rengi */
+    background-color: #fff;
+}
+
+.solution-block:nth-of-type(even) { /* Çift sıradaki bloklar için arkaplan rengi */
+    background-color: #e9ecef;
+}
+
+.solution-block.reverse {
+    flex-direction: row-reverse; /* Görsel ve metin sırasını tersine çevir */
+}
+
+.solution-image {
+    flex: 1; /* Esnek boyutlandırma */
+    max-width: 40%; /* Maksimum genişlik biraz küçültüldü */
+    display: flex; /* İçindeki görseli ortalamak için */
+    justify-content: center;
+    align-items: center;
+}
+
+.solution-image img {
+    /* Çözüm görsellerinin boyutunu daha da küçültmek için yapılan değişiklikler */
+    width: 300px; /* Yeni sabit genişlik */
+    height: 200px; /* Yeni sabit yükseklik */
+    object-fit: cover; /* Görselin boyutlara sığmasını sağlar */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.solution-content {
+    flex: 1; /* Esnek boyutlandırma */
+    max-width: 60%; /* Metin içeriğine biraz daha genişlik verildi */
+    text-align: left;
+}
+
+.solution-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.solution-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Takım / Testimonials Section */
+.team-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.team-section h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.profile-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Küçük ekranlarda sarmayı sağlar */
+    gap: 2rem; /* Profil öğeleri arası boşluk */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 150px; /* Profil öğesinin sabit genişliği daha da küçültüldü */
+}
+
+.profile-item img {
+    /* Dairesel görselin boyutunu daha da küçültmek için yapılan değişiklikler */
+    width: 100px; /* Yeni dairesel görsel boyutu */
+    height: 100px; /* Yeni dairesel görsel boyutu */
+    border-radius: 50%; /* Görseli dairesel yapar */
+    object-fit: cover; /* Görselin daireye sığmasını sağlar */
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-item p {
+    font-size: 1.1rem; /* Font boyutu da küçültüldü */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.profile-item span {
+    font-size: 0.8rem; /* Font boyutu da küçültüldü */
+    color: #777;
+}
+
+
+/* Responsive Tasarım İçin Küçük Ekran Ayarları */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 80%;
+    }
+
+    .about-us-container {
+        flex-direction: column; /* Küçük ekranlarda dikey hizalama */
+        gap: 2rem;
+    }
+
+    .circular-image {
+        width: 200px; /* Küçük ekranlarda daha küçük görsel */
+        height: 200px;
+    }
+
+    .about-us-text {
+        text-align: center; /* Metni ortaya hizala */
+        max-width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Küçük ekranlarda tek sütun */
+    }
+
+    .solution-block {
+        flex-direction: column; /* Küçük ekranlarda dikey hizalama */
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .solution-block.reverse {
+        flex-direction: column; /* Küçük ekranlarda dikey hizalama (ters çevirme kalkar) */
+    }
+
+    .solution-image,
+    .solution-content {
+        max-width: 100%; /* Küçük ekranlarda tam genişlik */
+    }
+
+    .solution-image img {
+        width: 250px; /* Mobil görünümde çözüm görselleri için daha da küçük genişlik */
+        height: 150px; /* Mobil görünümde çözüm görselleri için daha da küçük yükseklik */
+    }
+
+    .profile-item {
+        width: 120px; /* Mobil görünümde profil öğesi genişliği daha da küçültüldü */
+    }
+
+    .profile-item img {
+        width: 80px; /* Mobil görünümde dairesel görsel boyutu daha da küçültüldü */
+        height: 80px; /* Mobil görünümde dairesel görsel boyutu daha da küçültüldü */
+    }
+}
+/* Temel Sıfırlama ve Font Ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Gezinme Çubuğu (Navigation Bar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+/* Ana Görsel Başlık Bölümü (Hero Section) */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #e9ecef;
+    min-height: 70vh; /* Sayfanın en az %70'ini kaplaması için */
+    gap: 2rem;
+}
+
+.hero-content {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.hero-image {
+    max-width: 50%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hakkımızda Bölümü (About Us Section) */
+.about-us {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* Görsel ve metin arasında boşluk */
+    max-width: 1200px;
+    margin: 0 auto; /* Ortalamak için */
+}
+
+.circular-image {
+    width: 300px; /* Sabit genişlik ve yükseklik */
+    height: 300px;
+    border-radius: 50%; /* Dairesel yapmak için */
+    overflow: hidden; /* Taşmayı engellemek için */
+    flex-shrink: 0; /* Küçülmesini engellemek için */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Görselin dairesel alana sığmasını sağlar */
+}
+
+.about-us-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-us-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.about-us-text p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Problem / Features Section */
+.features {
+    padding: 4rem 2rem;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.features p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 3rem auto; /* Ortalamak ve alt boşluk eklemek için */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive üç sütun */
+    gap: 2rem; /* Sütunlar arası boşluk */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature-item img {
+    /* Görsel boyutunu küçültmek için yapılan değişiklikler */
+    width: 150px; /* Sabit genişlik */
+    height: 100px; /* Sabit yükseklik */
+    object-fit: cover; /* Resmin boyutlara sığmasını sağlar */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    margin-left: auto; /* Görseli yatayda ortalar */
+    margin-right: auto; /* Görseli yatayda ortalar */
+    display: block; /* margin: auto'nun çalışması için blok eleman yapar */
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #777;
+    margin: 0; /* Üstteki p stilini sıfırlamak için */
+}
+
+/* Çözümler Bölümü (Solutions Section) */
+.solution-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 3rem; /* Görsel ve metin arasında boşluk */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.solution-block:nth-of-type(odd) { /* Tek sıradaki bloklar için arkaplan rengi */
+    background-color: #fff;
+}
+
+.solution-block:nth-of-type(even) { /* Çift sıradaki bloklar için arkaplan rengi */
+    background-color: #e9ecef;
+}
+
+.solution-block.reverse {
+    flex-direction: row-reverse; /* Görsel ve metin sırasını tersine çevir */
+}
+
+.solution-image {
+    flex: 1; /* Esnek boyutlandırma */
+    max-width: 40%; /* Maksimum genişlik biraz küçültüldü */
+    display: flex; /* İçindeki görseli ortalamak için */
+    justify-content: center;
+    align-items: center;
+}
+
+.solution-image img {
+    /* Çözüm görsellerinin boyutunu daha da küçültmek için yapılan değişiklikler */
+    width: 300px; /* Yeni sabit genişlik */
+    height: 200px; /* Yeni sabit yükseklik */
+    object-fit: cover; /* Görselin boyutlara sığmasını sağlar */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.solution-content {
+    flex: 1; /* Esnek boyutlandırma */
+    max-width: 60%; /* Metin içeriğine biraz daha genişlik verildi */
+    text-align: left;
+}
+
+.solution-content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.solution-content p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* Takım / Testimonials Section */
+.team-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.team-section h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.profile-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Küçük ekranlarda sarmayı sağlar */
+    gap: 2rem; /* Profil öğeleri arası boşluk */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 150px; /* Profil öğesinin sabit genişliği daha da küçültüldü */
+}
+
+.profile-item img {
+    /* Dairesel görselin boyutunu daha da küçültmek için yapılan değişiklikler */
+    width: 100px; /* Yeni dairesel görsel boyutu */
+    height: 100px; /* Yeni dairesel görsel boyutu */
+    border-radius: 50%; /* Görseli dairesel yapar */
+    object-fit: cover; /* Görselin daireye sığmasını sağlar */
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-item p {
+    font-size: 1.1rem; /* Font boyutu da küçültüldü */
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.profile-item span {
+    font-size: 0.8rem; /* Font boyutu da küçültüldü */
+    color: #777;
+}
+
+/* Fiyatlandırma / Bilgi Kartları Bölümü (Pricing / Information Cards Section) */
+.pricing-section {
+    padding: 4rem 2rem;
+    /* Arka plan görseli ve ayarları */
+    background-image: url('https://placehold.co/1920x1080/FFFDE7/FFFDE7?text=Arkaplan+Görseli'); /* Buraya istediğiniz arka plan görselinin URL'ini ekleyebilirsiniz */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* İçerik için z-index kullanabilmek adına */
+    text-align: center;
+    color: #333; /* Metin rengini uygun hale getir */
+}
+
+/* Arka plan görseli üzerine metin okunabilirliğini artırmak için yarı saydam overlay */
+.pricing-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 253, 231, 0.8); /* Sarımsı yarı saydam overlay */
+    z-index: 1; /* İçeriğin arkasında kalmasını sağlar */
+}
+
+.pricing-section h2,
+.pricing-section h3,
+.card-container {
+    position: relative; /* İçeriği overlay'in üzerine çıkarmak için */
+    z-index: 2;
+}
+
+.pricing-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.pricing-section h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Küçük ekranlarda sarmayı sağlar */
+    gap: 2rem; /* Kartlar arası boşluk */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pricing-card {
+    background-color: #fff; /* Kartların kendi arka planı beyaz olsun */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Hafif gölge efekti */
+    flex: 1; /* Esnek boyutlandırma */
+    min-width: 280px; /* Kartların minimum genişliği */
+    max-width: 350px; /* Kartların maksimum genişliği */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease; /* Hover efekti için geçiş */
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px); /* Üzerine gelindiğinde hafifçe yukarı kalkma */
+}
+
+.pricing-card h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-card ul {
+    list-style: none; /* Varsayılan madde işaretlerini kaldır */
+    padding: 0;
+    margin-bottom: 1.5rem;
+    text-align: left; /* Madde işaretlerini sola hizala */
+}
+
+.pricing-card ul li {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem; /* Madde işareti için boşluk */
+}
+
+.pricing-card ul li::before {
+    content: '✔'; /* Özel madde işareti */
+    color: #007bff; /* Mavi renk */
+    position: absolute;
+    left: 0;
+}
+
+.pricing-card .price {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: auto; /* Fiyatı alta hizala */
+}
+
+/* S.S.S Bölümü (FAQ Section) */
+.faq-section {
+    padding: 4rem 2rem;
+    background-color: #fff; /* Arkaplan rengi */
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.faq-section h3 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+
+/* Responsive Tasarım İçin Küçük Ekran Ayarları */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 80%;
+    }
+
+    .about-us-container {
+        flex-direction: column; /* Küçük ekranlarda dikey hizalama */
+        gap: 2rem;
+    }
+
+    .circular-image {
+        width: 200px; /* Küçük ekranlarda daha küçük görsel */
+        height: 200px;
+    }
+
+    .about-us-text {
+        text-align: center; /* Metni ortaya hizala */
+        max-width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Küçük ekranlarda tek sütun */
+    }
+
+    .solution-block {
+        flex-direction: column; /* Küçük ekranlarda dikey hizalama */
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .solution-block.reverse {
+        flex-direction: column; /* Küçük ekranlarda dikey hizalama (ters çevirme kalkar) */
+    }
+
+    .solution-image,
+    .solution-content {
+        max-width: 100%; /* Küçük ekranlarda tam genişlik */
+    }
+
+    .solution-image img {
+        width: 250px; /* Mobil görünümde çözüm görselleri için daha da küçük genişlik */
+        height: 150px; /* Mobil görünümde çözüm görselleri için daha da küçük yükseklik */
+    }
+
+    .profile-item {
+        width: 120px; /* Mobil görünümde profil öğesi genişliği daha da küçültüldü */
+    }
+
+    .profile-item img {
+        width: 80px; /* Mobil görünümde dairesel görsel boyutu daha da küçültüldü */
+        height: 80px; /* Mobil görünümde dairesel görsel boyutu daha da küçültüldü */
+    }
+
+    .card-container {
+        flex-direction: column; /* Küçük ekranlarda kartları dikey olarak sırala */
+    }
+
+    .pricing-card {
+        max-width: 90%; /* Mobil görünümde kartların genişliği */
+    }
+}
